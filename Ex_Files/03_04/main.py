@@ -32,8 +32,10 @@ laureates_beginning_with_a = []
 # LinkedIn learner code here
 for name_with_a in laureates:
     if name_with_a["name"][0] == "A":  #accesses the "name" field of dictionarie and check for the first letter [0] if it's equal to "A"
-        laureates_beginning_with_a.append(name_with_a["name"])
+        laureates_beginning_with_a.append(name_with_a)
 
 
 with open("laureates.json", "w") as f:
     json.dump(laureates_beginning_with_a, f, indent=2)
+
+
